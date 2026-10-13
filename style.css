@@ -1,0 +1,154 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f2f2f2;
+    color: #333333;
+}
+
+/* Bagian header */
+header {
+    background-color: #17365d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 35px;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+/* Menu navigasi */
+nav {
+    background-color: #28558c;
+    text-align: center;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffcc66;
+}
+
+/* Bagian isi halaman */
+.container {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.container > h2 {
+    color: #17365d;
+}
+
+/* Berita utama */
+.berita-utama {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.berita-utama img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.berita-utama a,
+.kartu a {
+    color: #1769aa;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Daftar berita */
+.daftar-berita {
+    display: flex;
+    gap: 20px;
+}
+
+.kartu {
+    background-color: white;
+    width: 33.33%;
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+.kartu img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.kartu h3 {
+    color: #17365d;
+}
+
+/* Halaman artikel */
+.isi-berita {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+.isi-berita h2,
+.isi-berita h3 {
+    color: #17365d;
+}
+
+.tanggal {
+    color: gray;
+    font-size: 14px;
+}
+
+.gambar-artikel {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.tombol {
+    display: inline-block;
+    background-color: #28558c;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+/* Bagian footer */
+footer {
+    background-color: #17365d;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Tampilan layar kecil */
+@media screen and (max-width: 600px) {
+    .daftar-berita {
+        display: block;
+    }
+
+    .kartu {
+        width: auto;
+    }
+
+    nav a {
+        margin: 0 6px;
+    }
+
+    .berita-utama img {
+        height: 200px;
+    }
+}
